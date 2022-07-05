@@ -24,21 +24,21 @@ h2 {
 #searchbar {
     float: right;
     font-size: 200%;
-
+    width: 30%;
 }
 
 /*Navbar styling*/
 .nav {
     overflow: hidden;
     background-color: #adefd1ff;
-    width: 80%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .nav a {
-    float: left;
+    
     display: block;
     color: #00203fff;
     text-align: center;
