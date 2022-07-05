@@ -60,3 +60,19 @@ h2 {
 .nav .icon {
     display: none;
 }
+
+/*Tool bar section*/
+#tool-bar{
+    height: 600px;
+
+}
+#performance-wheel{
+    padding-top: 30px;
+    width: 40%;
+    float: left;
+}
+#kpi{
+    padding-top: 30px;
+    width: 40%;
+    float: right;
+}
