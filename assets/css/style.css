@@ -22,3 +22,7 @@ h1,h2 {
     float: left;
     font-size: 280%;
 }
+#searchbar{
+    float: right;
+    font-size: 200%;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <meta name="description" content="CRM system">
     <meta name="keywords" content="CRM, clientside, customer service">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <title>ClientSide</title>
 </head>
+
 <body>
     <!---Start of app continter-->
     <div class="container">
@@ -20,26 +22,21 @@
             </a>
             <!--Search bar-->
             <div class="search">
-                search
+                <h2 id="searchbar">search</h2>
             </div>
-            <!--Start of navbar-->
-            <nav class="navbar">
-                <ul><li>
-                    <a href="indec.html">Home Page</a>
-                </li></ul>
-                <ul><li>
-                    <a href="#">Companies Page</a>
-                </li></ul>
-                <ul><li>
-                    <a href="#">Oppurtunitys page</a>
-                </li></ul>
-                <ul><li>
-                    <a href="#">Engagement Hub</a>
-                </li></ul>
-            </nav>
+
         </header>
         <section>
-            
+            <!--@REFERENCE: W3 Schools Responsive Navbar Tutorial: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp>
+            !--MENU BAR START-->
+            <div class="topnav" id="myTopnav">
+                <!-- Add class="active" to current page -->
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Companies Page</a>
+                <a href="#">Oppurtunitys Page</a>
+                <a href="#">Engagement Hub</a>
+            </div>
+            <!--MENU BAR END-->
         </section>
         <section>
             tool bar
@@ -55,6 +52,7 @@
         </footer>
     </div>
     <!---End of app continter-->
-    
+
 </body>
+
 </html>
