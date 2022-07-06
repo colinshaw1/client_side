@@ -1,64 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Slab:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Slab:wght@300&display=swap");
 
+/* sets a margin, padding and border for all of the page removing the default one */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    flex-direction: column;
+}
+html{
+    height: 100%;
+}
 body {
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    color: #3a3a3a;
-}
-
-/*Heading and Logos styling*/
-
-h1,
-h2 {
-    font-family: 'Roboto Slab', serif;
-    letter-spacing: 4px;
-    color: #252525;
-}
-
-#logo {
-    float: left;
-    font-size: 280%;
-    width: 30%;
-}
-
-#searchbar {
-    float: right;
-    font-size: 200%;
-    width: 30%;
-}
-
-/*Navbar styling*/
-.nav {
-    overflow: hidden;
-    background-color: #adefd1ff;
-    width: 60%;
+    font-family: 'Merriweather', serif, sans-serif;
+    font-weight: 250%;
+    background-color: #b3bac7;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+/*Heading, navabr and Logos styling*/
+
+header {
+    height: 80px;
+    width: auto;
+
+}
+#main-logo {
+    float: right;
+    margin-right: 40px;
+    font-size: 180%;
+
 }
 
-.nav a {
-    
-    display: block;
-    color: #00203fff;
-    text-align: center;
-    padding: 14px 16px;
+.navbar {
+    font-size: 130%;
+    letter-spacing: 2px;
+
+}
+
+h1,h2 {
+    font-family: 'Roboto Slab', serif, sans-serif;
+    color: #131619;
+    letter-spacing: 2px;
+
+}
+
+.navbar li {
+    float: left;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.navbar a {
+    color: #131619;
     text-decoration: none;
-    font-size: 17px;
 }
 
-.nav a:hover {
-    background-color: #fef9ef;
-    color: black;
+.navbar a:hover {
+    border-bottom: 1px solid #131619;
 }
 
-.nav a.active {
-    background-color: #00203fff;
-    color: white;
-}
-
-.nav .icon {
-    display: none;
+.active {
+    border-bottom: 2px solid #131619;
 }
 
 /*Tool bar section*/

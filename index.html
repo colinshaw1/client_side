@@ -15,18 +15,56 @@
 <body>
     <!---Start of app continter-->
     <div class="container">
-        <header>
-            <!--Logo-->
-            <div>
-                <a href="index.html">
-                    <h1 id="logo">ClientSide</h1>
-                </a>
-            </div>
-            <!--Search bar-->
-            <div class="search">
-                <h2 id="searchbar">search</h2>
-            </div>
 
+        <!--Header to place navbar in-->
+        <header>
+            <nav>
+                <!--unordered list for nav bar items and links-->
+                <ul class="navbar">
+                    <li>
+                        <!--href to link index page to the home button in navbar
+                    set a class of active to link in css for active page to be unrderlined-->
+                        <a href="index.html" class="active">
+                            Home
+                        </a>
+
+                    </li>
+                    <li>
+                        <!--href to link to external companies page when clicked-->
+                        <a href="#">
+                            Companies
+                        </a>
+                    </li>
+                    <li>
+                        <!--href to link to external Oppurtunites page when clicked-->
+                        <a href="#">
+                            Oppurtunites
+                        </a>
+
+                    </li>
+                    <li>
+                        <!--href to link to external Engagement Hub page when clicked-->
+                        <a href="contact.html">
+                            Engagement Hub
+                        </a>
+
+                    </li>
+                    <li>
+                        <!--href to link to external Engagement Hub page when clicked-->
+                        <a href="#">
+                            SearchBar
+                        </a>
+
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!--href to link home page to breath logo-->
+            <a href="index.html">
+                <!--defining logo id within h1-->
+                <h1 id="main-logo">ClientSide</h1>
+            </a>
         </header>
         <section>
             <!--@REFERENCE: W3 Schools Responsive Navbar Tutorial: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp>
