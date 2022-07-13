@@ -1,6 +1,17 @@
+//import tickets route
+import Tickets from "../components/Tickets"
+
 const Dashboard = () => {
     return (
-        <div>Dashboard</div>
+        //styling dashboard
+        <div>Dashboard
+            <h1>My Project</h1>
+            <div className="ticket-container">
+                <Tickets/>
+            </div>
+        </div>
+        
+
     )
 }
 
