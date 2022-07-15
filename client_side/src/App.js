@@ -7,7 +7,7 @@ import CustomerTickets from './pages/CustomerTickets'
 
 const App = () => {
   return (
-    //routes
+    //route paths
     <div className="App">   
       <BrowserRouter>
       <Navbar/>

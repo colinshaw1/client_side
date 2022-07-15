@@ -1,4 +1,4 @@
-//import tickets route
+//import tickets route from components page
 import Tickets from "../components/Tickets"
 
 const Dashboard = () => {
