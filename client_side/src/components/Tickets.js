@@ -1,6 +1,8 @@
 const Tickets = () => {
     return (
-        <div>Tickets</div>
+        <div className="ticket-card">
+            
+        </div>
     )
 }
 
