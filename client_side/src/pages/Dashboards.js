@@ -37,7 +37,7 @@ const Dashboard = () => {
     console.log(uniqueCategories)
     return (
         //styling dashboard
-        <div>Dashboard
+        <div>
             <h1>My Project</h1>
             <div className="ticket-container">
                 {tickets && uniqueCategories?.map((uniqueCategory, categoryIndex) => (

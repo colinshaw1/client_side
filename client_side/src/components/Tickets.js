@@ -15,9 +15,9 @@ const Tickets = ({color, ticket}) => {
             <div className="ticket-color"></div>
             <h3>{ticket.title}</h3>
             <CustomerCards/>
-            <PriorityDisplay/>
+            <StatusDisplay status={ticket.status}/>
             <ProgressDislay/>
-            <StatusDisplay/>
+            <PriorityDisplay/>
             </Link>
             <DeleteSection/>
         </div>
