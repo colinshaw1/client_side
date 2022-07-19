@@ -30,6 +30,7 @@ const Dashboard = () => {
         },
 
     ]
+    //Function to find all unique categories in array, mapping each objects to get the category
     const uniqueCategories = [
         ...new Set(tickets?.map(({category}) => category))
     ]
@@ -39,7 +40,20 @@ const Dashboard = () => {
         <div>Dashboard
             <h1>My Project</h1>
             <div className="ticket-container">
-                <Tickets/>
+                {tickets && uniqueCategories?.map((uniqueCategory, categoryIndex) => (
+                    <div key={categoryIndex}>
+                        <h3>{uniqueCategory}</h3>
+                        {tickets.filter(ticket => ticket.category === uniqueCategory)
+                            .map((filteredTicket,TicketIndex) =>(
+                                <Tickets
+                                id={TicketIndex}
+                                color={filteredTicket.color}
+                                ticket={filteredTicket}
+                                />
+                            ))
+                        }
+                    </div>
+                ))}
             </div>
         </div>
         

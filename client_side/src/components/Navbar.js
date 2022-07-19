@@ -1,21 +1,21 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 
-const Navbar = () => {
+const Nav = () => {
 
-    const navigate = useNavigate()
-    return (
-        <nav>
-            <div className="logo-container">
-                ClientSide
-            </div>
-            <div className="container-controls">
-                <div className="icon" onClick={() => navigate('/ticket')}>➕</div>
-                <div className="icon" onClick={() => navigate('/')}>❮❮</div>
-            </div>
-        </nav>
-    )
+  const navigate = useNavigate()
+
+  return (
+    <nav>
+      <div className="logo-container" onClick={() => navigate('/')}>
+        ClientSide
+      </div>
+      <div className="controls-container">
+        <div className="icon" onClick={() => navigate('/ticket')}>➕</div>
+        <div className="icon" onClick={() => navigate('/')}>❮❮</div>
+      </div>
+    </nav>
+  )
 }
 
-//Navbar component
-export default Navbar 
+export default Nav
