@@ -1,29 +1,32 @@
-const StatusDisplay = (status) => {
+const StatusDisplay = ({ status }) => {
+
 
     const getColor = (status) => {
         let color
         switch (status) {
-            case 'done':
+            case 'Done':
                 color = 'rgb(186,255,201)'
-
                 break
-            case 'working on it':
+            case 'Working on it':
                 color = 'rgb(255,223,186)'
                 break
-            case 'stuck':
+            case 'Stuck':
                 color = 'rgb(255,179,186)'
                 break
             default:
-                color = 'rgb(186,255,255'
+                color = 'rgb(186,225,255)'
         }
         return color
     }
+
     return (
-        <div className="status-display" style={{backgroundColor:getColor(status)}}>
+        <div
+            className="status-display"
+            style={{ backgroundColor: getColor(status) }}
+        >
             {status}
         </div>
     )
 }
 
-//StatusDisplay component
 export default StatusDisplay
