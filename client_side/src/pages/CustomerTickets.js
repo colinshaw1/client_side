@@ -58,7 +58,7 @@ const CustomerTickets = () => {
                             {categories?.map((category, _index) => (
                                 <option key={_index} value={category}>{category}</option>
                             ))}
-                            
+
                         </select>
 
                         <label htmlFor="category">Update Category</label>
@@ -70,7 +70,7 @@ const CustomerTickets = () => {
                             required={true}
                             value={formData.category}
                         />
-                        
+
                         <label>Priority</label>
                         <div className="priority-input-container">
                             <input
@@ -131,9 +131,10 @@ const CustomerTickets = () => {
                                 checked={formData.priority === 5}
                             />
                             <label gtmlFor="priority-5">5</label>
-                            
-                            
-                            <input
+
+                        </div>
+                        {editMode &&
+                            <><input
                                 type="range"
                                 id="progress"
                                 value={formData.progress}
@@ -141,10 +142,23 @@ const CustomerTickets = () => {
                                 max="100"
                                 onChnage={handleChange}
                             />
-                            <label htmlFor="progress">Progress</label>
+                                <label htmlFor="progress">Progress</label>
 
-                        </div>
-                    </section>
+                                <label>Status</label>
+                                <select
+                                    name="status"
+                                    value={formDat.status}
+                                    onChange={handleChange}
+                                >
+                                    <option selected={formData.status === 'done'} value='done'>Done</option>
+                                    <option selected={formData.status === 'in progress'} value='in progress'>In progress</option>
+                                    <option selected={formData.status === 'stuck'} value='stuck'>Stuck</option>
+                                    <option selected={formData.status === 'not started'} value='not started'>Not Started</option>
+                                </select>
+                                </>}
+
+
+                     </section>
                 </form>
 
             </div>
