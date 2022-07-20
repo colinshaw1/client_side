@@ -30,6 +30,16 @@ const Dashboard = () => {
         },
 
     ]
+    //array of colors for each time a category is created
+    const colors = [
+        'rgb(255,179,186)',
+        'rgb(255,179,186)',
+        'rgb(255,179,186)',
+        'rgb(255,179,186)',
+        'rgb(255,179,186)'
+
+    ]
+
     //Function to find all unique categories in array, mapping each objects to get the category
     const uniqueCategories = [
         ...new Set(tickets?.map(({category}) => category))
@@ -47,7 +57,7 @@ const Dashboard = () => {
                             .map((filteredTicket,TicketIndex) =>(
                                 <Tickets
                                 id={TicketIndex}
-                                color={filteredTicket.color}
+                                color={colors[categoryIndex] || colors[0]}
                                 ticket={filteredTicket}
                                 />
                             ))

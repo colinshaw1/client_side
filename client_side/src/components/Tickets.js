@@ -12,7 +12,7 @@ const Tickets = ({color, ticket}) => {
     return (
         <div className="ticket-card">
             <Link to={`/ticket/${ticket.documentId}`} id="link">
-            <div className="ticket-color"></div>
+            <div className="ticket-color" style={{backgroundColor: color}}></div>
             <h3>{ticket.title}</h3>
             <UserCardSection user={ticket.user}/>
             <StatusDisplaySection status={ticket.status}/>
