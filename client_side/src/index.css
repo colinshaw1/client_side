@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif, Arial, Helvetica;
-    font-size: 8px;
+
 }
 
 /*App styling*/
@@ -21,39 +21,39 @@ body {
 nav {
     height: 20vh;
     background-color: rgb(43, 43, 63);
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  nav .logo-container,
-  nav .controls-container {
+}
+
+nav .logo-container,
+nav .controls-container {
     padding: 40px 25px;
     display: flex;
     flex-direction: column;
-  }
-  
-  nav .logo-container img {
+}
+
+nav .logo-container img {
     width: 20px;
-  }
-  
-  nav .icon {
-    color: rgb(255,255,255);
-  }
-  
-  /* Dashboard styling */
-  
-  .dashboard {
+}
+
+nav .icon {
+    color: rgb(255, 255, 255);
+}
+
+/* Dashboard styling */
+
+.dashboard {
     padding: 30px;
     width: 100%;
-  }
-  
-  .dashboard .ticket-container {
-    height:80vh;
+}
+
+.dashboard .ticket-container {
+    height: 80vh;
     overflow: scroll;
-  }
+}
 
 /* Ticket cards styling*/
 
@@ -75,12 +75,28 @@ nav {
     display: flex;
     align-items: center;
 }
-.ticket-card .tick-color{
+
+.ticket-card .tick-color {
     width: 15px !important;
-    padding: 5px  !important;
+    padding: 5px !important;
     margin: 2px;
 }
+
 .ticket-card .status-display {
     display: flex;
     justify-content: center;
-  }
+}
+
+.ticket-card .priority-display {
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-card .priority-display .tick-container {
+    display: flex;
+}
+
+.ticket-card .priority-display .tick-container h3 {
+    margin: 5px;
+    padding: 0;
+}

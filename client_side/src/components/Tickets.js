@@ -17,7 +17,7 @@ const Tickets = ({color, ticket}) => {
             <CustomerCards/>
             <StatusDisplay status={ticket.status}/>
             <ProgressDislay/>
-            <PriorityDisplay/>
+            <PriorityDisplay priority={ticket.priority}/>
             </Link>
             <DeleteSection/>
         </div>
