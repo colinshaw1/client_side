@@ -1,6 +1,10 @@
-const UserCardSection = () => {
+const UserCardSection = ({ user }) => {
     return (
-        <div>UserCardSection</div>
+        <div
+            className="user-display"
+        >
+            {user}
+        </div>
     )
 }
 

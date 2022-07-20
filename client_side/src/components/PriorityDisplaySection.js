@@ -1,4 +1,4 @@
-const PriorityDisplay = ({priority}) => {
+const PriorityDisplaySection = ({priority}) => {
    //function to return unicode tick icon in color depending on the priority.
     return (
         <div className="priority-display">
@@ -13,5 +13,5 @@ const PriorityDisplay = ({priority}) => {
     )
 }
 
-//PriorityDisplay component
-export default PriorityDisplay
+//PriorityDisplaySection component
+export default PriorityDisplaySection

@@ -76,10 +76,16 @@ nav .icon {
     align-items: center;
 }
 
-.ticket-card .tick-color {
+.ticket-card .ticket-color {
     width: 15px !important;
     padding: 5px !important;
     margin: 2px;
+}
+
+.ticket-card .user-display {
+    display: flex;
+    justify-content: center;
+    width: 80px;
 }
 
 .ticket-card .status-display {
@@ -117,4 +123,24 @@ nav .icon {
 .ticket-card .progress-bar .progress-indicator {
     background-color: rgb(104, 104, 175);
     height: 100%;
+}
+
+.ticket-card .delete-section {
+    background-color: rgb(211, 211, 211);
+    width: 50px;
+    margin: 2px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.ticket-card .delete-section .delete-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
 }
