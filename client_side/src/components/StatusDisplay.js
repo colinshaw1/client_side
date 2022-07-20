@@ -28,5 +28,5 @@ const StatusDisplay = ({ status }) => {
         </div>
     )
 }
-
+//StatusDisplay component
 export default StatusDisplay

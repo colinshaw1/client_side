@@ -19,43 +19,43 @@ body {
 
 /*nav styling*/
 nav {
-    height: 40vh;
+    height: 20vh;
     background-color: rgb(43, 43, 63);
-    color: rgb(255, 255, 255);
+    color: rgb(255,255,255);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-nav .logo-container,
-nav .controls-container {
-    padding: 20px 10px;
+  }
+  
+  nav .logo-container,
+  nav .controls-container {
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
-}
-
-nav .logo-container img {
-    width: 10px;
-}
-
-nav .icon {
-    color: rgb(255, 255, 255);
-}
-
-/*dashboard styling*/
-.dashboard {
+  }
+  
+  nav .logo-container img {
+    width: 20px;
+  }
+  
+  nav .icon {
+    color: rgb(255,255,255);
+  }
+  
+  /* Dashboard styling */
+  
+  .dashboard {
     padding: 30px;
     width: 100%;
-}
-
-.dashboard .ticket-container {
-    height: 80vh;
+  }
+  
+  .dashboard .ticket-container {
+    height:80vh;
     overflow: scroll;
-    float: right;
-}
+  }
 
-/* Ticket card*/
+/* Ticket cards styling*/
 
 .ticket-card {
     display: flex;
@@ -80,3 +80,7 @@ nav .icon {
     padding: 5px  !important;
     margin: 2px;
 }
+.ticket-card .status-display {
+    display: flex;
+    justify-content: center;
+  }
