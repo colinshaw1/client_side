@@ -2,8 +2,8 @@ import { useState } from "react"
 
 const CustomerTickets = () => {
     //setting the from data in its intal state
-    const[fromData, setFromData] = useState({
-        status:'not started',
+    const [fromData, setFromData] = useState({
+        status: 'not started',
         progress: 0
     })
     const editMode = false
@@ -11,8 +11,17 @@ const CustomerTickets = () => {
     const handleSubmit = () => {
         console.log('submitted')
     }
-    const handleChange = () => {
-        console.log('changed')
+
+    //gets value of input and name to add a property to objects
+    const handleChange = (e) => {
+        const value = e.target.value
+        const name = e.target.name
+        //pass through previous state and add name and value
+        setFromData((prevState) => ({
+            ...prevState,
+            [name] : value
+        })
+        )
     }
     return (
         <div className="tickets">
