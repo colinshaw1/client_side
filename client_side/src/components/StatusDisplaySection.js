@@ -1,4 +1,4 @@
-const StatusDisplay = ({ status }) => {
+const StatusDisplaySection = ({ status }) => {
 
 
     const getColor = (status) => {
@@ -28,5 +28,5 @@ const StatusDisplay = ({ status }) => {
         </div>
     )
 }
-//StatusDisplay component
-export default StatusDisplay
+//StatusDisplaySection component
+export default StatusDisplaySection

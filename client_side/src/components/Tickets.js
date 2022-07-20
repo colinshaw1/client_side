@@ -1,11 +1,11 @@
 //import link so it can be used from react router dom. 
 import {Link} from 'react-router-dom'
 //import component pages into ticket page
-import CustomerCards from "./CustomerCards"
+import UserCardSection from "./UserCardSection"
 import DeleteSection from "./DeleteSection"
-import PriorityDisplay from "./PriorityDisplay"
-import ProgressDislay from "./ProgressDisplay"
-import StatusDisplay from "./StatusDisplay"
+import PriorityDisplaySection from "./PriorityDisplaySection"
+import ProgressDislaySection from "./ProgressDisplaySection"
+import StatusDisplaySection from "./StatusDisplaySection"
 
 
 const Tickets = ({color, ticket}) => {
@@ -14,10 +14,10 @@ const Tickets = ({color, ticket}) => {
             <Link to={`/ticket/${ticket.documentId}`} id="link">
             <div className="ticket-color"></div>
             <h3>{ticket.title}</h3>
-            <CustomerCards/>
-            <StatusDisplay status={ticket.status}/>
-            <ProgressDislay/>
-            <PriorityDisplay priority={ticket.priority}/>
+            <UserCardSection/>
+            <StatusDisplaySection status={ticket.status}/>
+            <ProgressDislaySection progress={ticket.progress}/>
+            <PriorityDisplaySection priority={ticket.priority}/>
             </Link>
             <DeleteSection/>
         </div>
