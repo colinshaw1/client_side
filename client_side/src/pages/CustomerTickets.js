@@ -131,6 +131,17 @@ const CustomerTickets = () => {
                                 checked={formData.priority === 5}
                             />
                             <label gtmlFor="priority-5">5</label>
+                            
+                            
+                            <input
+                                type="range"
+                                id="progress"
+                                value={formData.progress}
+                                min="0"
+                                max="100"
+                                onChnage={handleChange}
+                            />
+                            <label htmlFor="progress">Progress</label>
 
                         </div>
                     </section>
