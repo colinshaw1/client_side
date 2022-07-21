@@ -25,9 +25,19 @@ User Experince
 
 Resources
 --------------
+• Code institute for material and ideas 
+• Geeks for Geeks for information and ideas 
+• W3 Schools for information and ideas 
+• Slack for inspiration 
+• YouTube for tutorials 
+
 
 Technology use
 ----------
+• Git for storing files and deployment
+• HTML and CSS for mark up and styling
+• JavaScript and react for making the apllication responsive
+• Gitpod for design
 
 Testing
 -----------------
@@ -38,7 +48,7 @@ Validation
 
 Version Control
 ------------------
-
+GitHub and GitPod to update and commit changed to my repository all commits tracked to mark progress
 
 Depoloyment
 ----------------
