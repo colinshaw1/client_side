@@ -5,10 +5,11 @@ For my Academic Internship project I wanted to design a CRM system to help impro
 
 Who is this CLientSide intened for?
 ---------
+ClientSide is an online portal for sales and marketing teams. It allows clients to track teams and individuals' targets, an overview of the company's performance down to each team, companies that you are currently working with, opportunities pipelines, and overall engagement of teams. The purpose is to improve a company's all-round efficiency and improve profits. 
 
 Owner
 --------------
-
+Colin Shaw is the owner of ClientSide. The goal is to help companies improve customer service and improve productivity. 
 
 
 How to use
@@ -24,6 +25,9 @@ User Experince
 
 Resources
 --------------
+
+Technology use
+----------
 
 Testing
 -----------------
