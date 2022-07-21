@@ -7,7 +7,7 @@ const cor = require('cors')
 const axios = require('axis')
 
 const app = express()
-//Url for creating requests
+//Url for creating GET requests
 const url = 'https://91959d8b-bc56-4bfc-8af5-b4356315a502-europe-west1.apps.astra.datastax.com/api/rest/v2/namespaces/tickets/collections'
 
 //gets token generated form datastax for the database 
