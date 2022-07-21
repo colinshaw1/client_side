@@ -13,12 +13,12 @@ const url = 'https://https://91959d8b-bc56-4bfc-8af5-b4356315a502-europe-west1.a
 //gets token generated form datastax for the database 
 const token = 'AstraCS:UjTMaLhBgpJQtPUDzibwCfvl:72f31d100aaffc667ec2ad86e8becf74b4360315b41ace52438ec2a930205124:JGTqaNSqJlyvxSwMypwZDmkI:913ca9a3c6c912465cdd4082c5868428a926638f40dcdea4b2f97f14cacea3cc'
 
-//creat tickets 
+//creat tickets POST new task to database
 app.post('/tickets', async (req,res) => {
     const formData = req.body.formData
 
-    const options - {
-        method: 'PORT',
+    const options = {
+        method: 'POST',
         heards: {
             Accepts: 'applications/json',
             'X-Cassandra-Token':token,
