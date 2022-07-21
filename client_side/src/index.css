@@ -144,3 +144,25 @@ nav .icon {
     align-items: center;
     color: rgb(255, 255, 255);
 }
+
+/*Customer tickets page*/
+.tickets {
+    padding: 25px;
+    width: 100%;
+}
+.tickets .ticket-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tickets form {
+    display: flex;
+}
+
+.tickets form section {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    width: 300px;
+}

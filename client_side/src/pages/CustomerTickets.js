@@ -147,7 +147,7 @@ const CustomerTickets = () => {
                                 <label>Status</label>
                                 <select
                                     name="status"
-                                    value={formDat.status}
+                                    value={formData.status}
                                     onChange={handleChange}
                                 >
                                     <option selected={formData.status === 'done'} value='done'>Done</option>
@@ -155,10 +155,21 @@ const CustomerTickets = () => {
                                     <option selected={formData.status === 'stuck'} value='stuck'>Stuck</option>
                                     <option selected={formData.status === 'not started'} value='not started'>Not Started</option>
                                 </select>
-                                </>}
+                            </>}
+                        <input type="submit" />
 
-
-                     </section>
+                    </section>
+                    <section>
+                        <label htmlFor="owner">Owner</label>
+                        <input
+                            id="owner"
+                            name="owner"
+                            type="owner"
+                            onChange={handleChange}
+                            required={true}
+                            value={formData.owner}
+                        />
+                    </section>
                 </form>
 
             </div>
