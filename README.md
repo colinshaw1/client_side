@@ -11,52 +11,22 @@ Owner
 --------------
 Colin Shaw is the owner of ClientSide. The goal is to help companies improve customer service and improve productivity. 
 
-Screenshots of Apllication working
------------------------------
-
-How to use
-------------
-ClientSide user manual
-1. Open ClientSide
-2. 
-
-
-User Experince
-----------------
-Strategy Plane
-
-Client
-
-Scope Plane
-
-• Created in HTML, CSS, JavaScript, React
-• 
-
-Structure Plane
-
-
 Resources
 --------------
-• Code institute for material and ideas 
 • Geeks for Geeks for information and ideas 
 • W3 Schools for information and ideas 
-• Slack for inspiration 
 • YouTube for tutorials 
-
 
 Technology use
 ----------
-• Git for storing files and deployment
+• GitHub for storing files and deployment
 • HTML and CSS for mark up and styling
 • JavaScript and react for making the apllication responsive
 • Gitpod for design
 
 Testing
 -----------------
-
-Validation
---------
-
+Unfortunetly app did not work once back end development started
 
 Version Control
 ------------------
@@ -64,3 +34,4 @@ GitHub and GitPod to update and commit changed to my repository all commits trac
 
 Depoloyment
 ----------------
+Unfortunelty App could not get to deployment
